@@ -1,0 +1,62 @@
+html{font-family: Candara;
+    background-color: #d1fcff;
+    padding: 1em;}
+
+h1{text-align: center}
+
+h2{text-align: left}
+
+body{background-color: white;
+    padding: 1em;}
+
+ul {list-style: none;}
+
+nav a{float: left;
+    color: #5166f2;
+    text-align: center;
+    padding: 15px 15px;
+    text-decoration: none;
+    font-size: 20px;}
+
+form{padding: 3em;
+    margin-top: 5px}
+
+table{font-size: 20px;
+    alignment: center;
+    margin-left:auto;
+    margin-right:auto;}
+
+button{border: none;
+    color: #000000;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;}
+
+#center{text-align: center}
+
+#game{text-align: center;}
+
+#staff{list-style: circle;}
+
+.error{
+    font-size: small;
+    color: red;}
+
+.food{background-color: #ffeac4;}
+
+.drink{background-color: #d1fcff;}
+
+.fitness{background-color: #b9ffc0;}
+
+#signup{padding-left: 2em}
+
+.floatR {float: right}
+
+input, textarea {margin-bottom: 1em;}
+
+footer, header{background-color: rgb(70, 83, 160);
+    padding: 1em;
+    color: white;
+    text-align: center}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<header>
+<h1>Fitness Family</h1>
+</header>
+<nav>
+    <ul>
+        <li><a href="index.html"><u>Home</u></a></li>
+        <li><a href="aboutUs.html"><u>About us</u></a></li>
+        <li><a href="fitnessGame.html"><u>Try Our Fitness Game</u></a></li>
+        <li><a href="signUp.html" class="floatR"><u>Sign Up</u></a></li>
+    </ul>
+    <br>
+    <br>
+</nav>
+<h2 id="signup">Sign Up</h2>
+<body>
+<form method="post">
+    <Label>First Name: <input type="text" name="fname" size="15"></Label><br>
+    <Label>Last Name: <input type="text" name="lname" size="15"></Label><br>
+    <Label>Address: <input type="text" name="address" size="30"></Label><br>
+    <Label>City: <input type="text" name="city" size="15"></Label><br>
+    <Label>State: <input type="text" name="state" minlength="2" maxlength="2" size="2"></Label><br>
+    <Label>Zip: <input type="text" name="zip" size="6"></Label><br>
+    <label>Email: <input type="text" name="email"></label><br>
+    <input type="submit">
+</form>
+<footer>
+    Copyright &copy; Fitness Family<br>
+    <a href="bestfitness@manager.com"></a>
+</footer>
+<script>
+    function init() {
+        var myRules =
+            {
+                fname:
+                    {
+                        required: true,
+                    },
+                lname:
+                    {
+                        required: true,
+                    },
+                zip:
+                    {
+                        digits: true,
+                        min: 0,
+                    },
+                email:
+                        {
+                            required: true,
+                            email:true,
+                        }
+            };
+        var myMessages =
+            {
+                fname:
+                    {
+                        required: "This field is required.",
+                    },
+                lname:
+                    {
+                        required: "This field is required.",
+                    },
+                zip:
+                    {
+                        digits: "Must be a number.",
+                        min: "Cannot be negative."
+                    },
+                email:
+                    {
+                        required: "This field is required."
+                    }
+            };
+        var config =
+            {
+                rules:myRules,
+                messages:myMessages
+            };
+        $("form").validate(config);
+    }
+
+    $(init);
+</script>
+</body>
+</html>
